@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Cat from './components/Cat';
 import Dog from './components/Dog';
+import Button from './components/Button';
 
 // ROOT COMPONENT
 function App() {
@@ -16,12 +17,15 @@ function App() {
           Hello this is my first React app
         </p>
         <div className="flex">
-          <Cat colour="#eb9e34" name="Tabitha" lackOfCommonSense="true" />
-          <Cat colour="#f2f2d0" name="Mog" lackOfCommonSense="false" />
-          <Cat colour="#f2e2d0" name="Sam" lackOfCommonSense="true" />
+          <Cat color="#eb9e34" name="Tabitha" lackOfCommonSense={true} />
+          <Cat color="#f2f2d0" name="Mog" lackOfCommonSense={false} />
+          <Cat color="#f2e2d0" name="Sam" lackOfCommonSense={true} />
         </div>
-       
-        <Dog />
+        <div className='flex'>
+          <Dog name="Billy" color="#f2f2d0" dogYears={4}/>
+        </div>
+
+      
       </header>
     </div>
   );
