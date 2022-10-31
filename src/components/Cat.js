@@ -22,10 +22,8 @@ function Cat(props) {
                     <p>I have NO common sense</p>
                     :
                     <p>I do have some common sense</p>
-                }
-            </div>
-            <div>
-                <Button />
+                } 
+                <Button color="#eb4034" textColor="#def018"/>
             </div>
         </>
         

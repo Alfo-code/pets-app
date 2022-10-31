@@ -1,7 +1,8 @@
 function Dog({dogYears, color, name}) {
 
     const styles = {
-        backgroundColor: color
+        backgroundColor: color,
+        
     }
 
     function calculateHumanYears(){
@@ -16,7 +17,7 @@ function Dog({dogYears, color, name}) {
     <>
         <div style={styles}>
             <h2>I am {name},</h2>
-            <p>I am {dogYears}, but {humanYears} in human years!</p>
+            <p>I am {dogYears}, that is {humanYears} in human years!</p>
         </div>
     </>
     )

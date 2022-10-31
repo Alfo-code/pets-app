@@ -42,4 +42,13 @@
 .flex {
   display:flex;
   gap:1rem;
+  margin-bottom: 1rem;
+}
+
+
+.formStyle {
+  background-color: aquamarine;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
 }

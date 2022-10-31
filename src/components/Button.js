@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function Button(props){
     const{color, textColor} = props;
     const ButtonStyle = {
@@ -5,10 +7,16 @@ function Button(props){
         backgroundColor:color
     }
 
+    function Change(){
+        const [color, textColor] = useState('');
+    }
+
 
 
     return (
-        <button style={ButtonStyle}>Change</button>
+        <button onClick={() =>{
+            textColor(color);
+        }} style={ButtonStyle}>Change</button>
     )
 }
 export default Button;
